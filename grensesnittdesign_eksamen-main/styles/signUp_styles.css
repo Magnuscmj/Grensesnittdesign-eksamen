@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: whitesmoke;
+}
+
+/* main container */
+.container {
+}
+
+/* background image */
+.backgroundTop {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/_bakgrunn.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    margin-bottom: -65px;
+}
+
+/* cafe logo */
+.logo {
+    background-image: url("../img/_logo_transparent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    width: 220px;
+    top: -150px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* grid container */
+.grid-container {
+    margin-top: -75px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows:    auto auto auto auto auto auto;
+  }
+
+  /* Main-grid controller */
+  .grid-item {
+    border-radius: 2.5px;
+    padding: 15px;
+    width: 260px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.40);
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.40);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.40);
+  }
+
+/* username */
+  .grid-item-1 {
+    margin: 0 auto 25px;
+    height: 15px;
+    grid-row: 1;
+    grid-column: 1 / span 6;
+  }
+
+  .grid-item-1:hover {
+    box-shadow:  0 0 0 1.5px #000000;
+  }
+
+/* email */
+  .grid-item-2 {
+    margin: 0 auto 25px;
+    height: 15px;
+    grid-row: 2;
+    grid-column: 1 / span 6;
+}
+
+.grid-item-2:hover {
+    box-shadow:  0 0 0 1.5px #000000;
+  }
+
+/* password */
+.grid-item-3 {
+    margin: 0 auto 25px;
+    color: whitesmoke;
+    grid-row: 3;
+    grid-column: 1 / span 6;
+    text-decoration: none;
+}
+
+.grid-item-3:hover {
+    animation: none;
+    box-shadow:  0 0 0 1.5px #000000;
+  }
+
+/* register */
+.grid-item-4 {
+    margin: 0 auto 80px;
+    background-color: rgb(26, 26, 26);
+    color: whitesmoke;
+    width: 180px;
+    grid-row: 4;
+    grid-column: 1 / span 6;
+    text-decoration: none;
+}
+
+.grid-item-4:hover {
+    transition: 0.2s;
+    background-color: rgba(26, 26, 26, 0.787);
+  }
+
+/* login with facebook */
+.grid-item-5 {
+    margin: 0 auto 25px;
+    background-color: #3b5998;
+    color: whitesmoke;
+    grid-row: 5;
+    grid-column: 1 / span 6;
+    text-decoration: none;
+}
+
+.grid-item-5:hover {
+    transition: 0.3s;
+    background-color: rgba(2, 59, 248, 0.918);
+  }
+
+
+/* login with google+ */
+.grid-item-6 {
+    margin: 0 auto 25px;
+    background-color: #db4a39;
+    color: whitesmoke;
+    grid-row: 6;
+    grid-column: 1 / span 6;
+    text-decoration: none;
+}
+
+.grid-item-6:hover {
+    transition: 0.3s;
+    background-color: rgba(255, 0, 0, 0.945);
+  }
+
+/*Screen split container: --- Eller ---*/
+.split-container {
+    position: relative;
+    width: 330px;
+    height: 35px;
+    margin: 0 auto;
+    top: -190px;
+    font-size: 15px;
+}
+
+.split-container .line-1 {
+    width: 125px;
+    border-top: 1px solid black;
+    right: 200px;
+    position: absolute;
+    top: 9px;
+}
+
+.split-container .line-2 {
+    width: 125px;
+    border-top: 1px solid black;
+    left: 200px;
+    position: absolute;
+    top: 9px;
+}
+
+.split-container .middle-text {
+    position: relative;
+    margin: 0 auto;
+}
+
+.info-text {
+    margin: 0 auto;
+    position: relative;
+    bottom: 140px;
+}
+
+#facebook {
+    margin-right: 8px;
+}
+
+#google {
+    margin-right: 8px;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 768px) {
+ 
+}
+
+/* For desktop: */
+@media only screen and (min-width: 968px) {
+    .backgroundTop {
+        background-image: none;
+    }
+
+    .logo {
+        background-image: url("../img/_logo_transparent.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        top: -150px;
+        border-radius: 5px;
+    }
+
+    .container {
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/_bakgrunn.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+      /* Main-grid controller */
+
+    .info-text {
+        margin: 0 auto;
+        position: relative;
+        bottom: 140px;
+        color: whitesmoke;
+    }
+
+    /*Screen split container: --- Eller ---*/
+    .split-container {
+        position: relative;
+        width: 330px;
+        height: 35px;
+        margin: 0 auto;
+        top: -195px;
+    }
+
+    .split-container .line-1 {
+        border-top: 1px solid whitesmoke;
+    }
+
+    .split-container .line-2 {
+        border-top: 1px solid whitesmoke;
+    }
+
+    .split-container .middle-text {
+        color: whitesmoke;
+    }
+
+    /* username */
+  .grid-item-1 {
+    margin: 0 auto 25px;
+    height: 15px;
+    grid-row: 1;
+    grid-column: 1 / span 6;
+  }
+
+    /* Login Facebook */
+    .grid-item-5 {
+        margin: 0 auto 25px;
+        background-color: #3b5998;
+        color: whitesmoke;
+        grid-row: 5;
+        grid-column: 1 / span 6;
+        text-decoration: none;
+    }
+
+    /* Login med Google+ */
+    .grid-item-6 {
+        margin: 0 auto 25px;
+        background-color: #db4a39;
+        color: whitesmoke;
+        grid-row: 6;
+        grid-column: 1 / span 6;
+        text-decoration: none;
+    }
+
+    /* Login */
+    .grid-item-3 {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    /* Register */
+    .grid-item-4 {
+        background-color: rgb(255, 132, 31);
+        color: whitesmoke;
+        text-decoration: none;
+    }
+}
